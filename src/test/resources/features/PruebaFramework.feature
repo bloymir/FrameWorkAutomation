@@ -17,6 +17,7 @@ Feature: El objetivo es validar que la configuracion del framework funcione
         When hago clic en la seccion <section>
         And hago clic en el link de sandbox
 
+
         Examples:
             | section |
             | Recursos |
@@ -25,3 +26,4 @@ Feature: El objetivo es validar que la configuracion del framework funcione
     Scenario: Los usuarios pueden un plan de pago en la academia
         Given navego a www.freerangetester.com
         When hago clic en el boton Elegir Plan
+        Then valido las opciones de planes del carrito
